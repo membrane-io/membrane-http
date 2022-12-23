@@ -1,5 +1,4 @@
 {
-  "config": {},
   "lockSchema": true,
   "dependencies": {
     "sys_http": "sys-http:"
@@ -10,6 +9,10 @@
         "name": "Root",
         "description": "Use this program to make HTTP requests",
         "fields": [
+          {
+            "name": "status",
+            "type": "String"
+          },
           {
             "name": "get",
             "description": "A resource obtained via a GET request",
@@ -67,9 +70,24 @@
         "name": "Resource",
         "description": "An HTTP response",
         "fields": [
-          { "name": "status", "description": "HTTP status code", "type": "Int", "params": [] },
-          { "name": "headers", "description": "HTTP headers returned by server", "type": "String", "params": [] },
-          { "name": "body", "description": "Body of the request as a string", "type": "String", "params": [] }
+          {
+            "name": "status",
+            "description": "HTTP status code",
+            "type": "Int",
+            "params": []
+          },
+          {
+            "name": "headers",
+            "description": "HTTP headers returned by server",
+            "type": "String",
+            "params": []
+          },
+          {
+            "name": "body",
+            "description": "Body of the request as a string",
+            "type": "String",
+            "params": []
+          }
         ]
       }
     ]
