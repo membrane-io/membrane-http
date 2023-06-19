@@ -18,8 +18,15 @@
             "description": "A resource obtained via a GET request",
             "type": "Resource",
             "params": [
-              { "name": "url", "type": "String" },
-              { "name": "headers", "type": "String" }
+              {
+                "name": "url",
+                "type": "String"
+              },
+              {
+                "name": "headers",
+                "type": "String",
+                "optional": true
+              }
             ]
           },
           {
@@ -47,9 +54,20 @@
             "description": "Performs a POST request",
             "type": "Resource",
             "params": [
-              { "name": "url", "type": "String" },
-              { "name": "headers", "type": "String" },
-              { "name": "body", "type": "String" }
+              {
+                "name": "url",
+                "type": "String"
+              },
+              {
+                "name": "headers",
+                "type": "String",
+                "optional": true
+              },
+              {
+                "name": "body",
+                "type": "String",
+                "optional": true
+              }
             ]
           },
           {
@@ -57,9 +75,20 @@
             "description": "Performs a PUT request",
             "type": "Resource",
             "params": [
-              { "name": "url", "type": "String" },
-              { "name": "headers", "type": "String" },
-              { "name": "body", "type": "String" }
+              {
+                "name": "url",
+                "type": "String"
+              },
+              {
+                "name": "headers",
+                "type": "String",
+                "optional": true
+              },
+              {
+                "name": "body",
+                "type": "String",
+                "optional": true
+              }
             ]
           },
           {
@@ -67,9 +96,20 @@
             "description": "Performs a PATCH request",
             "type": "Resource",
             "params": [
-              { "name": "url", "type": "String" },
-              { "name": "headers", "type": "String" },
-              { "name": "body", "type": "String" }
+              {
+                "name": "url",
+                "type": "String"
+              },
+              {
+                "name": "headers",
+                "type": "String",
+                "optional": true
+              },
+              {
+                "name": "body",
+                "type": "String",
+                "optional": true
+              }
             ]
           },
           {
@@ -77,9 +117,20 @@
             "description": "Performs a DELETE request",
             "type": "Resource",
             "params": [
-              { "name": "url", "type": "String" },
-              { "name": "headers", "type": "String" },
-              { "name": "body", "type": "String" }
+              {
+                "name": "url",
+                "type": "String"
+              },
+              {
+                "name": "headers",
+                "type": "String",
+                "optional": true
+              },
+              {
+                "name": "body",
+                "type": "String",
+                "optional": true
+              }
             ]
           }
         ]
@@ -116,8 +167,14 @@
             "description": "A resource obtained via a GET request",
             "type": "Resource",
             "params": [
-              { "name": "url", "type": "String" },
-              { "name": "headers", "type": "String" }
+              {
+                "name": "url",
+                "type": "String"
+              },
+              {
+                "name": "headers",
+                "type": "String"
+              }
             ]
           },
           {
@@ -137,9 +194,20 @@
             "description": "Performs a POST request",
             "type": "Resource",
             "params": [
-              { "name": "url", "type": "String" },
-              { "name": "headers", "type": "String" },
-              { "name": "body", "type": "String" }
+              {
+                "name": "url",
+                "type": "String"
+              },
+              {
+                "name": "headers",
+                "type": "String",
+                "optional": true
+              },
+              {
+                "name": "body",
+                "type": "String",
+                "optional": true
+              }
             ]
           },
           {
@@ -147,9 +215,20 @@
             "description": "Performs a PUT request",
             "type": "Resource",
             "params": [
-              { "name": "url", "type": "String" },
-              { "name": "headers", "type": "String" },
-              { "name": "body", "type": "String" }
+              {
+                "name": "url",
+                "type": "String"
+              },
+              {
+                "name": "headers",
+                "type": "String",
+                "optional": true
+              },
+              {
+                "name": "body",
+                "type": "String",
+                "optional": true
+              }
             ]
           },
           {
@@ -157,9 +236,20 @@
             "description": "Performs a PATCH request",
             "type": "Resource",
             "params": [
-              { "name": "url", "type": "String" },
-              { "name": "headers", "type": "String" },
-              { "name": "body", "type": "String" }
+              {
+                "name": "url",
+                "type": "String"
+              },
+              {
+                "name": "headers",
+                "type": "String",
+                "optional": true
+              },
+              {
+                "name": "body",
+                "type": "String",
+                "optional": true
+              }
             ]
           },
           {
@@ -167,9 +257,20 @@
             "description": "Performs a DELETE request",
             "type": "Resource",
             "params": [
-              { "name": "url", "type": "String" },
-              { "name": "headers", "type": "String" },
-              { "name": "body", "type": "String" }
+              {
+                "name": "url",
+                "type": "String"
+              },
+              {
+                "name": "headers",
+                "type": "String",
+                "optional": true
+              },
+              {
+                "name": "body",
+                "type": "String",
+                "optional": true
+              }
             ]
           }
         ]
