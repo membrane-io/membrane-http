@@ -6,56 +6,56 @@ import { root, nodes } from "membrane";
 const QUERY = "{ status headers body }";
 
 export const Root = {
-  get: ({ args }) => nodes.sys_http.get({ ...args }).$query(QUERY),
-  post: ({ args }) => nodes.sys_http.post({ ...args }).$invoke(),
-  put: ({ args }) => nodes.sys_http.put({ ...args }).$invoke(),
-  patch: ({ args }) => nodes.sys_http.patch({ ...args }).$invoke(),
-  delete: ({ args }) => nodes.sys_http.delete({ ...args }).$invoke(),
+  get: (args) => nodes.sys_http.get({ ...args }).$query(QUERY),
+  post: (args) => nodes.sys_http.post({ ...args }).$invoke(),
+  put: (args) => nodes.sys_http.put({ ...args }).$invoke(),
+  patch: (args) => nodes.sys_http.patch({ ...args }).$invoke(),
+  delete: (args) => nodes.sys_http.delete({ ...args }).$invoke(),
   status: () => "Ready",
-  authenticated: ({ args }) => ({}),
+  authenticated: (args) => ({}),
 };
 
 export const Authenticated = {
-  createLink: ({ self }) => {
+  createLink: (_, { self }) => {
     const { api, authId } = self.$argsAt(root.authenticated);
     return nodes.sys_http.authenticated({ api, authId }).createLink().$invoke();
   },
-  hasAuthenticated: ({ self }) => {
+  hasAuthenticated: (_, { self }) => {
     const { api, authId } = self.$argsAt(root.authenticated);
     return nodes.sys_http
       .authenticated({ api, authId })
       .hasAuthenticated()
       .$get();
   },
-  get: ({ self, args }) => {
+  get: (args, { self }) => {
     const { api, authId } = self.$argsAt(root.authenticated);
     return nodes.sys_http
       .authenticated({ api, authId })
       .get({ ...args })
       .$query(QUERY);
   },
-  post: ({ self, args }) => {
+  post: (args, { self }) => {
     const { api, authId } = self.$argsAt(root.authenticated);
     return nodes.sys_http
       .authenticated({ api, authId })
       .post({ ...args })
       .$invoke();
   },
-  put: ({ self, args }) => {
+  put: (args, { self }) => {
     const { api, authId } = self.$argsAt(root.authenticated);
     return nodes.sys_http
       .authenticated({ api, authId })
       .put({ ...args })
       .$invoke();
   },
-  patch: ({ self, args }) => {
+  patch: (args, { self }) => {
     const { api, authId } = self.$argsAt(root.authenticated);
     return nodes.sys_http
       .authenticated({ api, authId })
       .patch({ ...args })
       .$invoke();
   },
-  delete: ({ self, args }) => {
+  delete: (args, { self }) => {
     const { api, authId } = self.$argsAt(root.authenticated);
     return nodes.sys_http
       .authenticated({ api, authId })
