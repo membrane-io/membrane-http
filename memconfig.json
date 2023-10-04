@@ -10,10 +10,6 @@
         "description": "Make HTTP requests",
         "fields": [
           {
-            "name": "status",
-            "type": "String"
-          },
-          {
             "name": "get",
             "description": "A resource obtained via a GET request",
             "type": "Resource",
