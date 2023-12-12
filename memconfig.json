@@ -16,12 +16,14 @@
             "params": [
               {
                 "name": "url",
-                "type": "String"
+                "type": "String",
+                "description": "The URL of the resource to retrieve"
               },
               {
                 "name": "headers",
                 "type": "String",
-                "optional": true
+                "optional": true,
+                "description": "Optional headers for the GET request"
               }
             ]
           },
@@ -52,17 +54,20 @@
             "params": [
               {
                 "name": "url",
-                "type": "String"
+                "type": "String",
+                "description": "The URL to send the POST request to"
               },
               {
                 "name": "headers",
                 "type": "String",
-                "optional": true
+                "optional": true,
+                "description": "Optional headers for the POST request"
               },
               {
                 "name": "body",
                 "type": "String",
-                "optional": true
+                "optional": true,
+                "description": "The body of the POST request"
               }
             ]
           },
@@ -73,17 +78,20 @@
             "params": [
               {
                 "name": "url",
-                "type": "String"
+                "type": "String",
+                "description": "The URL to send the PUT request to"
               },
               {
                 "name": "headers",
                 "type": "String",
-                "optional": true
+                "optional": true,
+                "description": "Optional headers for the PUT request"
               },
               {
                 "name": "body",
                 "type": "String",
-                "optional": true
+                "optional": true,
+                "description": "The body of the PUT request"
               }
             ]
           },
@@ -94,17 +102,20 @@
             "params": [
               {
                 "name": "url",
-                "type": "String"
+                "type": "String",
+                "description": "The URL to send the PATCH request to"
               },
               {
                 "name": "headers",
                 "type": "String",
-                "optional": true
+                "optional": true,
+                "description": "Optional headers for the PATCH request"
               },
               {
                 "name": "body",
                 "type": "String",
-                "optional": true
+                "optional": true,
+                "description": "The body of the PATCH request"
               }
             ]
           },
@@ -115,17 +126,20 @@
             "params": [
               {
                 "name": "url",
-                "type": "String"
+                "type": "String",
+                "description": "The URL to send the DELETE request to"
               },
               {
                 "name": "headers",
                 "type": "String",
-                "optional": true
+                "optional": true,
+                "description": "Optional headers for the DELETE request"
               },
               {
                 "name": "body",
                 "type": "String",
-                "optional": true
+                "optional": true,
+                "description": "The body of the DELETE request"
               }
             ]
           }
